@@ -6,11 +6,11 @@ const pdfSchema = new Schema(
       type: String,
       required: 'You need to enter the PDF title',
     },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: timestamp => dateFormat(timestamp)
-    },
+    // createdAt: {
+    //   type: Date,
+    //   default: Date.now,
+    //   get: timestamp => dateFormat(timestamp)
+    // },
     year: {
       type: Number,
       required: true
