@@ -1,3 +1,3 @@
-const Data = require('./Data')
+const Pdf = require('./Pdf')
 
-module.exports = { Data }
+module.exports = { Pdf }
