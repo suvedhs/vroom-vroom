@@ -1,0 +1,54 @@
+.header {
+
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header__socials{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 5;
+    bottom: 3rem;
+}
+
+section{
+    margin-top: 8rem;
+    height:75vh;
+}
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+/*=== media queries (medium devices) ===*/
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 68vh;
+
+    }
+}
+/*=== media queries (small devices) ===*/
+@media screen and (max-width: 400px) {
+    .header{
+        height:100vh;
+
+    }
+    .header__socials{
+        display: none;
+    }
+}
