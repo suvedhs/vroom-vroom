@@ -5,6 +5,7 @@ import Dogs from './Dogs'
 import Cats from './Cats'
 // import Login from '../../src/Login'
 
+
 const Header = () => {
   return (
     <header>
@@ -12,6 +13,8 @@ const Header = () => {
       <div className="container header_container">
 
         <h1>WELCOME TO HAPPY PAWS</h1>
+
+        
         <CTA/>
         <Dogs/>
         <Cats/> 
