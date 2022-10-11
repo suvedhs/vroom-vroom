@@ -17,7 +17,7 @@ const data = [
 const Dogs = () => {
   return (
     <section id="dogs">
-      <h5>DOGS</h5>
+      {/* <h5>DOGS</h5> */}
       <h2>DOGS</h2>
 
       <div className='container dogs-container'>
@@ -26,7 +26,7 @@ const Dogs = () => {
             return (
               <article key={id} className='dogs-item'>
           <div className='dogs-item-image'></div>
-          <img src={image}/>
+          <img src={image} alt=""/>
           <h3>{title}</h3>
 
         </article>

@@ -9,8 +9,7 @@ const Header = () => {
       <section>
       <div className="container header_container">
 
-        <h5>WELCOME TO </h5>
-        <h1> HAPPY PAWS</h1>
+        <h1>WELCOME TO HAPPY PAWS</h1>
         <CTA/>
         {/* <Login/> */}
         
