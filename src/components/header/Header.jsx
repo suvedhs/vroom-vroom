@@ -1,6 +1,8 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
+import Dogs from './Dogs'
+import Cats from './Cats'
 // import Login from '../../src/Login'
 
 const Header = () => {
@@ -11,6 +13,8 @@ const Header = () => {
 
         <h1>WELCOME TO HAPPY PAWS</h1>
         <CTA/>
+        <Dogs/>
+        <Cats/> 
         {/* <Login/> */}
         
         </div>
