@@ -7,6 +7,7 @@ import Login from './components/login/Login';
 import Cats from "./components/gatos/gatos";
 import Dogs from "./components/perros/perros";
 import Gallery from "./components/Gallery";
+import axios from "./components/login/api/axios";
 
 const App = () => {
   const [pages] = useState([
@@ -19,6 +20,26 @@ const App = () => {
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   
+  const getDogData = () => {
+    axios.get('/api/dogs')
+    .then(() => {
+      console.log('Dog data has been received!');
+    })
+    .catch(() => {
+      alert('Error retreiving dog data!')
+    });
+  };
+
+  const getCatData = () => {
+    axios.get('/api/cats')
+    .then(() => {
+      console.log('Cat data has been received!');
+    })
+    .catch(() => {
+      alert('Error retreiving cat data!')
+    });
+  }
+
 
   return (
     <>

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Header from "../header/Header";
 import Cats from "../gatos/gatos";
 import Gallery from "../Gallery";
-
-
+import Dog1 from "../../assets/dog1.png";
+import Dog2 from "../../assets/dog2.png"
 
 function Perros() {
     const [pages] = useState([
@@ -22,7 +22,7 @@ function Perros() {
   return (
     <article className='cats-item flex grid grid-cols-3'>
       <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+        <img class="w-full scale-80" src= {Dog1} alt="" id="perro-img" />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">Doggo aka</div>
             <h3 class="text-gray-700 text-base">Husky</h3>
@@ -36,7 +36,7 @@ function Perros() {
         </div>
 
         <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-          <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+          <img class="w-full scale-150 p-10" src= {Dog2} alt="" id="perro-img" />
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Doggo</div>
               <h3 class="text-gray-700 text-base">Husky</h3>
@@ -50,7 +50,7 @@ function Perros() {
           </div>
 
           <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+            <img class="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Doggo</div>
                 <h3 class="text-gray-700 text-base">Husky</h3>
@@ -64,7 +64,7 @@ function Perros() {
             </div>
 
             <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+        <img class="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">Doggo</div>
             <h3 class="text-gray-700 text-base">Husky</h3>
@@ -78,7 +78,7 @@ function Perros() {
         </div>
 
         <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-          <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+          <img class="w-full" src="husky-img.jpg" alt="" id="perro-img"></img>
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Doggo</div>
               <h3 class="text-gray-700 text-base">Husky</h3>
@@ -92,7 +92,7 @@ function Perros() {
           </div>
 
           <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="husky-img.jpeg" alt="Perro Image Here" id="perro-img" />
+            <img class="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Doggo</div>
                 <h3 class="text-gray-700 text-base">Husky</h3>
