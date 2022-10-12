@@ -10,10 +10,10 @@
     border: 1px solid transparent;
     transition: var(--transition);
 }
-.cats-item:hover{
+/* .cats-item:hover{
     border-color: var(--color-primary-varient);
     background: transparent;
-}
+} */
 .cats-item-image{
     border-radius: 1.5rem;
     overflow: hidden;
