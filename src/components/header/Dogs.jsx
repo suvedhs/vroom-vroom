@@ -1,6 +1,6 @@
 import React from 'react'
 import './dogs.css'
-import Perros from '../perros/Perros'
+import Perros from '../perros/perros'
 import {useState} from 'react';
 import Gallery from '../Gallery';
 
