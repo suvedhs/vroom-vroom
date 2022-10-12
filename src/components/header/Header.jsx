@@ -1,5 +1,5 @@
 import React from "react";
-import {useEffect} from 'react';
+import {useState ,useEffect} from 'react';
 import "./header.css";
 import CTA from "./CTA";
 import Dogs from "./Dogs";
