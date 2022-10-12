@@ -5,7 +5,7 @@ import Nav from "./components/Nav/Nav";
 import Login from './components/login/Login';
 // import Signup from './components/login/server'
 import Cats from "./components/gatos/gatos";
-import Dogs from "./components/perros/perros";
+import Dogs from "./components/perros/Perros";
 import Gallery from "./components/Gallery";
 import axios from "./components/login/api/axios";
 
@@ -53,23 +53,6 @@ const App = () => {
         ></Nav>
 
         <main>
-          <button
-            onClick={() => {
-              setCurrentPage(pages[1]);
-            }}
-          >
-            {" "}
-            Dog Link{" "}
-          </button>
-
-          <button
-            onClick={() => {
-              setCurrentPage(pages[2]);
-            }}
-          >
-            {" "}
-            Cat Link{" "}
-          </button>
 
           <>
             <Gallery currentPage={currentPage}></Gallery>
