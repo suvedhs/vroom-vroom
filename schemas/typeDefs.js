@@ -8,6 +8,8 @@ const typeDefs = gql`
         me: User
         users: [User]
         user(username: String!): User
+        cats: [Cat]
+        dogs: [Dog]
     }
     type User {
         _id: ID
