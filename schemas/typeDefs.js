@@ -8,15 +8,12 @@ const typeDefs = gql`
         me: User
         users: [User]
         user(username: String!): User
-        cats: [Cat]
     }
-
     type User {
         _id: ID
         username: String
         email: String
     }
-
     type Cat {
         _id: ID
         name: String
@@ -25,9 +22,7 @@ const typeDefs = gql`
         age: Int
         city: String
         image: String
-
     }
-
     type Dog {
         _id: ID
         name: String
@@ -36,7 +31,6 @@ const typeDefs = gql`
         age: Int
         city: String
         image: String
-
     }
 `;
 
