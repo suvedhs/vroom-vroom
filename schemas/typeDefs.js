@@ -12,8 +12,31 @@ const typeDefs = gql`
         city: String!
         image: String!
     }
+    type User {
+        id: ID!
+        email: String!
+        token: String!
+        username: String!
+        createdAt: String!
+      }
+      input RegisterInput {
+        username: String!
+        password: String!
+        confirmPassword: String!
+        email: String!
+      }
+
+    input RegisterInput{
+        username:String!
+        email: String!
+        password: String!
+    }
+
     type Query{
-      Cats: [Cat]  
+        Users: [User]  
+    }
+    type Query{
+      getCats: [Cat]  
     }
 
     type Dog {
@@ -29,40 +52,26 @@ const typeDefs = gql`
       Dogs: [Dog]  
     }
 
+   
+
+    type Mutation {
+        register(registerInput: RegisterInput): User!
+        login(username: String!, password: String!): User!
+        createCat(name:String!,breed:String!,sex:String!,age:Int!,city:String!,image:String!): Cat!
+        deleteCat(catID:ID!): String!
+        createDog(name:String!,breed:String!,sex:String!,age:Int!,city:String!,image:String!): Dog!
+        deleteDog(dogID: ID!):String!
+        
+      }
+
+    
+
 
 
 `;
 
+// type Query{
+//         Users: [User]
+//     }
 // export the typeDefs
 module.exports = typeDefs;
-
-// type Query {
-//         me: User
-//         users: [User]
-//         user(username: String!): User
-//         cats: [Cat]
-//         dogs: [Dog]
-//     }
-//     type User {
-//         _id: ID
-//         username: String
-//         email: String
-//     }
-//     type Cat {
-//         _id: ID
-//         name: String
-//         breed: String
-//         sex: String
-//         age: Int
-//         city: String
-//         image: String
-//     }
-//     type Dog {
-//         _id: ID
-//         name: String
-//         breed: String
-//         sex: String
-//         age: Int
-//         city: String
-//         image: String
-//     }
