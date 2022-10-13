@@ -26,6 +26,10 @@ const catSchema = new Schema(
     image: {
       type: String,
       required: 'You need to link the image!'
+    },
+    user:{
+      type: Schema.Types.ObjectId,
+      ref:'users'
     }
   },
   {

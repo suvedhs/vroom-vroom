@@ -23,18 +23,18 @@ const userSchema = new Schema(
       minlength: 5
     },
 
-    dogs: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Dog'
-        }
-    ],
-    cats: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Cat'
-        }
-    ]
+    // dogs: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: 'Dog'
+    //     }
+    // ],
+    // cats: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: 'Cat'
+    //     }
+    // ]
   },
   {
     toJSON: {
