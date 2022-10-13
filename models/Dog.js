@@ -35,6 +35,6 @@ const dogSchema = new Schema(
   }
 );
 
-const Pdf = model('Pdf', pdfSchema);
+const Dog = model('Dog', dogSchema);
 
-module.exports = Pdf;
+module.exports = Dog;
