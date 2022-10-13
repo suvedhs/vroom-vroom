@@ -1,12 +1,11 @@
-const { User } = require('../models');
+const { User, Cat } = require('../models');
 
 const resolvers = {
     Query: {
-        me: async (parent, args) => {
-          if (context.user) {
-            const userData = await User.findOne();
-            return userData;
-          }
+        cats: async () => {
+
+            return Cat.find()
+          
         }
     }
 };
