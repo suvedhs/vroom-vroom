@@ -8,6 +8,7 @@ import Cats from "./components/gatos/gatos";
 import Dogs from "./components/perros/perros";
 import Gallery from "./components/Gallery";
 import axios from "./components/login/api/axios";
+import Form from "./components/form/form";
 
 const App = () => {
   const [pages] = useState([
@@ -16,6 +17,7 @@ const App = () => {
     { name: "Back to the top", description: <Header></Header> },
     { name: "FaDog", description: <Dogs></Dogs> },
     { name: "Cats", description: <Cats></Cats> },
+    { name: "", description: <Form></Form> },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
@@ -38,7 +40,7 @@ const App = () => {
     .catch(() => {
       alert('Error retreiving cat data!')
     });
-  }
+  };
 
 
   return (
@@ -53,23 +55,23 @@ const App = () => {
         ></Nav>
 
         <main>
-          <button
+          <button id="form"
             onClick={() => {
-              setCurrentPage(pages[1]);
+              setCurrentPage(pages[4]);
             }}
           >
             {" "}
-            Dog Link{" "}
+            Lost Pet?{" "}
           </button>
 
-          <button
+          {/* <button
             onClick={() => {
               setCurrentPage(pages[2]);
             }}
           >
             {" "}
             Cat Link{" "}
-          </button>
+          </button> */}
 
           <>
             <Gallery currentPage={currentPage}></Gallery>
