@@ -10,7 +10,7 @@ function Gatos() {
   return (
     <article className='cats-item flex grid grid-cols-3'>
       <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-        <img className="w-full object-contain" src="" alt="" id="perro-img" />
+        <img className="w-fill object-cover h-96" src="" alt="" id="perro-img" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Doggo aka</div>
             <h3 className="text-gray-700 text-base">Husky</h3>
@@ -24,7 +24,7 @@ function Gatos() {
         </div>
 
         <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-          <img className="w-full object-contain" src="" alt="" id="perro-img" />
+          <img className="w-fill object-cover h-96" src="" alt="" id="perro-img" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Doggo</div>
               <h3 className="text-gray-700 text-base">Husky</h3>
@@ -38,7 +38,7 @@ function Gatos() {
           </div>
 
           <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-            <img className="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
+            <img className="w-fill object-cover h-96" src="husky-img.jpeg" alt="" id="perro-img" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Doggo</div>
                 <h3 className="text-gray-700 text-base">Husky</h3>
@@ -52,7 +52,7 @@ function Gatos() {
             </div>
 
             <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-        <img className="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
+        <img className="w-fill object-cover h-96" src="husky-img.jpeg" alt="" id="perro-img" />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">Doggo</div>
             <h3 class="text-gray-700 text-base">Husky</h3>
@@ -66,7 +66,7 @@ function Gatos() {
         </div>
 
         <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-          <img class="w-full" src="husky-img.jpg" alt="" id="perro-img"></img>
+          <img class="w-fill object-cover h-96" src="husky-img.jpg" alt="" id="perro-img"></img>
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Doggo</div>
               <h3 class="text-gray-700 text-base">Husky</h3>
@@ -80,7 +80,7 @@ function Gatos() {
           </div>
 
           <div class="max-w-sm p-4 rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="husky-img.jpeg" alt="" id="perro-img" />
+            <img class="w-fill object-cover h-96" src="husky-img.jpeg" alt="" id="perro-img" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Doggo</div>
                 <h3 class="text-gray-700 text-base">Husky</h3>
