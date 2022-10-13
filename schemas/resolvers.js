@@ -1,7 +1,12 @@
+const { User } = require('../models');
+
 const resolvers = {
     Query: {
-        queryName: () => {
-            return 'whatever we need returning';
+        me: async (parent, args) => {
+          if (context.user) {
+            const userData = await User.findOne();
+            return userData;
+          }
         }
     }
 };
