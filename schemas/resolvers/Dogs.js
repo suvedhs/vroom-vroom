@@ -1,5 +1,6 @@
 const Dog = require('../../models/Dog')
-
+const user = require('../../models/user');
+const { AuthenticationError } = require('apollo-server-express/dist');
 
 module.exports = {
     Query:{
@@ -37,6 +38,20 @@ module.exports = {
 
             const dog = await newDog.save();
             return dog;
+        },
+        async deleteDog (_,{dogID},context){
+            try{
+                const dog = await Dog.findById(dogID);
+                if(user.username=== dog.username){
+                    await dog.delete();
+                    return"post deleted";
+
+                }else{
+                    throw new AuthenticationError('Action not allowed');
+                }
+            } catch(err){
+                throw new Error(err);
+            }
         }
     }
 }
