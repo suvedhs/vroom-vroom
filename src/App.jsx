@@ -5,10 +5,41 @@ import Nav from "./components/Nav/Nav";
 import Login from './components/login/Login';
 // import Signup from './components/login/server'
 import Cats from "./components/gatos/gatos";
-import Dogs from "./components/perros/Perros";
+import Dogs from "./components/perros/perros";
 import Gallery from "./components/Gallery";
 import axios from "./components/login/api/axios";
 import Form from "./components/form/form";
+
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+  from,
+} from "@apollo/client";
+import { onError } from "@apollo/client/link/error";
+
+
+const errorLink = onError(({ graphqlErrors, networkError }) => {
+  if (graphqlErrors) {
+    graphqlErrors.map(({ message, location, path }) => {
+      alert(`Graphql error ${message}`);
+    });
+  }
+});
+
+
+const link = from([
+  errorLink,
+  new HttpLink({ uri: "http://localhost:3001/graphql" }),
+]);
+
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  link: link,
+});
+
 
 const App = () => {
   const [pages] = useState([
@@ -44,7 +75,8 @@ const App = () => {
 
 
   return (
-    <>
+
+    <ApolloProvider client={client}>
       <div>
         {/* <Header/> */}
         <Nav
@@ -83,8 +115,11 @@ const App = () => {
       </div>
 
       {/* <Login/> */}
-    </>
-  );
+    
+    </ApolloProvider>
+  ) 
 };
+
+
 
 export default App;

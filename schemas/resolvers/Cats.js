@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express/dist');
 const Cat = require('../../models/Cat');
 const user = require('../../models/user');
+
 // const checkAuth = require('../../utils/check-auth');
 
 module.exports = {
