@@ -49,7 +49,7 @@ const typeDefs = gql`
         image: String!
     }
     type Query{
-      Dogs: [Dog]  
+        getDogs: [Dog]  
     }
 
    

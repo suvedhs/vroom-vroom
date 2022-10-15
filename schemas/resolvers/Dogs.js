@@ -4,7 +4,7 @@ const { AuthenticationError } = require('apollo-server-express/dist');
 
 module.exports = {
     Query:{
-        async Dogs(){
+        async getDogs(){
             try{
                 const dogs = await Dog.find().sort({createdAt:-1});
                 return dogs;
