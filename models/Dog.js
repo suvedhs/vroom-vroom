@@ -26,6 +26,10 @@ const dogSchema = new Schema(
     image: {
       type: String,
       required: 'You need to link the image!'
+    },
+    user:{
+      type: Schema.Types.ObjectId,
+      ref:'users'
     }
   },
   {
@@ -35,6 +39,6 @@ const dogSchema = new Schema(
   }
 );
 
-const Pdf = model('Pdf', pdfSchema);
+const Dog = model('Dog', dogSchema);
 
-module.exports = Pdf;
+module.exports = Dog;
