@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../header/Header";
 
 
 import { useQuery, gql } from "@apollo/client";
