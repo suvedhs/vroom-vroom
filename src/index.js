@@ -4,7 +4,7 @@ import './index.css'
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 
 const client = new ApolloClient({
-    uri: 'http://localhost:3001/graphql',
+    uri: 'https://guarded-cove-87598.herokuapp.com/',
     cache: new InMemoryCache(),
 });
 
