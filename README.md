@@ -40,7 +40,9 @@ MongoDB
 # https://guarded-cove-87598.herokuapp.com/
 
 ## Credits
-# 
-# Luis Garcia GitHub: garcia2697
-# 
+Adrian Alaniz GitHub: Poison512
+Grant Huiras GitHub: mcnugboy
+Evan Clevanger: EvanClevenger
+Luis Garcia GitHub: garcia2697
+Saidana Narmo GitHub: smillkaa
 
