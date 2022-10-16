@@ -7,8 +7,8 @@ import Login from './components/login/Login';
 import Cats from "./components/gatos/gatos";
 import Dogs from "./components/perros/perros";
 import Gallery from "./components/Gallery";
-import axios from "./components/login/api/axios";
-import Form from "./components/form/form";
+import AddCat from "./components/form/addCat";
+import AddDog from "./components/form/addDog";
 
 
 import {
@@ -45,33 +45,15 @@ const App = () => {
   const [pages] = useState([
     {name: 'Log in', description:<Login></Login>},
     // {name: 'Signup', description:<Signup></Signup>},
-    { name: "Back to the top", description: <Header></Header> },
-    { name: "FaDog", description: <Dogs></Dogs> },
+    { name: "Home", description: <Header></Header> },
+    { name: "Dog", description: <Dogs></Dogs> },
     { name: "Cats", description: <Cats></Cats> },
-    { name: "", description: <Form></Form> },
+    { name: "", description: <AddCat></AddCat> },
+    { name: "", description: <AddDog></AddDog> },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   
-  const getDogData = () => {
-    axios.get('/api/dogs')
-    .then(() => {
-      console.log('Dog data has been received!');
-    })
-    .catch(() => {
-      alert('Error retreiving dog data!')
-    });
-  };
-
-  const getCatData = () => {
-    axios.get('/api/cats')
-    .then(() => {
-      console.log('Cat data has been received!');
-    })
-    .catch(() => {
-      alert('Error retreiving cat data!')
-    });
-  };
 
 
   return (
@@ -94,17 +76,17 @@ const App = () => {
             }}
           >
             {" "}
-            Lost Pet?{" "}
+            Lost Cat?{" "}
           </button>
 
-          {/* <button
+          <button id="form"
             onClick={() => {
-              setCurrentPage(pages[2]);
+              setCurrentPage(pages[5]);
             }}
           >
             {" "}
-            Cat Link{" "}
-          </button> */}
+            Lost Dog?{" "}
+          </button>
 
 
           <>
