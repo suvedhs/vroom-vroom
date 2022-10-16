@@ -2,6 +2,9 @@
   "name": "vroom",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@apollo/client": "^3.7.0",
     "@apollo/react-hooks": "^4.0.0",
