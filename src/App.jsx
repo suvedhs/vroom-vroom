@@ -32,7 +32,7 @@ const errorLink = onError(({ graphqlErrors, networkError }) => {
 
 const link = from([
   errorLink,
-  new HttpLink({ uri: "https://guarded-cove-87598.herokuapp.com/" }),
+  new HttpLink({ uri: "http://localhost:3001/graphql" }),
 ]);
 
 const client = new ApolloClient({
