@@ -40,7 +40,7 @@ MongoDB
 # https://guarded-cove-87598.herokuapp.com/
 
 ## Credits
-# Kate Lam GitHub: Kate-github
+# 
 # Luis Garcia GitHub: garcia2697
-# Valerie Gleason GitHub: hellovolcano
+# 
 
