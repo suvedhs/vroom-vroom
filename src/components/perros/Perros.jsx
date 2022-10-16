@@ -29,7 +29,7 @@ function Dogs() {
   if (error) return <p>Error :(</p>;
   return data.getDogs.map(({ id, name, breed, sex, age, city, image }) => (
     
-    <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm p-4 rounded overflow-hidden shadow-lg bg-white">
     <img
       className="w-fill object-cover h-96"
       class="sm:h-96 md:h-96 lg:h-96"
@@ -38,7 +38,7 @@ function Dogs() {
       id="perro-img"
     />
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">Name: {name}</div>
+      <h3 className="text-gray-700 text-base">Name: {name}</h3>
       <h3 className="text-gray-700 text-base">Breed: {breed}</h3>
       <h3 className="text-gray-700 text-base">Sex: {sex}</h3>
       <h3 className="text-gray-700 text-base">Age: {age}</h3>
