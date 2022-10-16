@@ -28,8 +28,13 @@ MongoDB
 ## Installation Instructions
 1. Clone the repo.
 2. Run npm install at the root folder of this project
-3. Run npm start.
+3. Make a .env file and place the following inside of it. 
+MONGODB_URI="mongodb+srv://smillkaa:qwqw@cluster0.rcp2jhc.mongodb.net/happy-paws?retryWrites=true&w=majority"
+4. Run npm start to start the react app.
+5. Run node server.js to start the database.
 6. Once you've started the server, access the app at http://localhost:3001
+
+
 
 
 # Screenshot of app
