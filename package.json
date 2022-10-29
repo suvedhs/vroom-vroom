@@ -31,7 +31,8 @@
     "build": "cd react-ui/ && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "heroku-postbuild": "npm run build"
   },
   "cacheDirectories": [
     "node_modules",
