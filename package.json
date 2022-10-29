@@ -28,11 +28,25 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cd react-ui/ && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "nodemon server.js"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garcia2697/vroom-vroom.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
